@@ -55,7 +55,7 @@
 // of views , value is an array that contains reuseable cells.
 @property (nonatomic, strong) NSMutableDictionary <NSString *, NSMutableSet *> *recycledIdentifierItemsDic;
 // Store reuseable cells by muiID.
-@property (nonatomic, strong) NSMutableDictionary *recycledMuiIDItemsDic;
+@property (nonatomic, strong) NSMutableDictionary <NSString *, UIView *> *recycledMuiIDItemsDic;
 
 // Store view models (TMMuiRectModel).
 @property (nonatomic, strong) NSMutableArray *itemsFrames;
