@@ -58,7 +58,7 @@
 @property (nonatomic, strong) NSMutableDictionary <NSString *, UIView *> *recycledMuiIDItemsDic;
 
 // Store view models (TMMuiRectModel).
-@property (nonatomic, strong) NSMutableArray *itemsFrames;
+@property (nonatomic, strong) NSMutableArray <TMMuiRectModel *> *itemsFrames;
 
 // ScrollView delegate, store original scrollDelegate here.
 // Because of lazyscrollview need calculate what views should be shown
