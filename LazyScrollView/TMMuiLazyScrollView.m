@@ -84,12 +84,12 @@
 @property (nonatomic, strong) NSString *currentVisibleItemMuiID;
 
 // It is used to store views need to assign new value after reload.
-@property (nonatomic, strong) NSMutableSet *shouldReloadItems;
+@property (nonatomic, strong) NSMutableSet <NSString *> *shouldReloadItems; // TMMuiRectModel.muiID
 
 // Record muiIDs of visible items. Used for calc enter times.
-@property (nonatomic, strong) NSSet *muiIDOfVisibleViews;
+@property (nonatomic, strong) NSSet <NSString *> *muiIDOfVisibleViews; // TMMuiRectModel.muiID
 // Store the times of view entered the screen, the key is muiID.
-@property (nonatomic, strong) NSMutableDictionary *enterDict;
+@property (nonatomic, strong) NSMutableDictionary <NSString *, NSNumber *> *enterDict; // TMMuiRectModel.muiID: enter times，装逼功能，垃圾代码
 // Store last time visible muiID. Used for calc enter times.
 @property (nonatomic, strong) NSMutableSet *lastVisibleMuiID;
 
