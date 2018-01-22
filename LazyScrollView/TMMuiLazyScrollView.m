@@ -66,9 +66,9 @@
 @property (nonatomic, weak) id<UIScrollViewDelegate> lazyScrollViewDelegate;
 
 // View Model sorted by Top Edge.
-@property (nonatomic, strong) NSArray *modelsSortedByTop;
+@property (nonatomic, strong) NSArray <TMMuiRectModel *> *modelsSortedByTop;
 // View Model sorted by Bottom Edge.
-@property (nonatomic, strong) NSArray *modelsSortedByBottom;
+@property (nonatomic, strong) NSArray <TMMuiRectModel *> *modelsSortedByBottom;
 
 // Store view models below contentOffset of ScrollView
 @property (nonatomic, strong) NSMutableSet *firstSet;
