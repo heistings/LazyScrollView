@@ -91,7 +91,7 @@
 // Store the times of view entered the screen, the key is muiID.
 @property (nonatomic, strong) NSMutableDictionary <NSString *, NSNumber *> *enterDict; // TMMuiRectModel.muiID: enter times，装逼功能，垃圾代码
 // Store last time visible muiID. Used for calc enter times.
-@property (nonatomic, strong) NSMutableSet *lastVisibleMuiID;
+@property (nonatomic, strong) NSMutableSet <NSString *> *lastVisibleMuiID; // TMMuiRectModel.muiID
 
 @end
 
