@@ -71,9 +71,9 @@
 @property (nonatomic, strong) NSArray <TMMuiRectModel *> *modelsSortedByBottom;
 
 // Store view models below contentOffset of ScrollView
-@property (nonatomic, strong) NSMutableSet *firstSet;
+@property (nonatomic, strong) NSMutableSet <NSString *> *firstSet; // TMMuiRectModel.muiID
 // Store view models above contentOffset + height of ScrollView
-@property (nonatomic, strong)  NSMutableSet *secondSet;
+@property (nonatomic, strong)  NSMutableSet <NSString *> *secondSet; // TMMuiRectModel.muiID
 
 // Record contentOffset of scrollview in previous time that calculate
 // views to show
