@@ -53,7 +53,7 @@
 
 // Store reuseable cells by reuseIdentifier. The key is reuseIdentifier
 // of views , value is an array that contains reuseable cells.
-@property (nonatomic, strong) NSMutableDictionary *recycledIdentifierItemsDic;
+@property (nonatomic, strong) NSMutableDictionary <NSString *, NSMutableSet *> *recycledIdentifierItemsDic;
 // Store reuseable cells by muiID.
 @property (nonatomic, strong) NSMutableDictionary *recycledMuiIDItemsDic;
 
