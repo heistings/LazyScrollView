@@ -47,8 +47,8 @@
 //****************************************************************
 
 @interface TMMuiLazyScrollView() <UIScrollViewDelegate> {
-    NSMutableSet *_visibleItems;
-    NSMutableSet *_inScreenVisibleItems;
+    NSMutableSet <UIView *> *_visibleItems;
+    NSMutableSet <UIView *> *_inScreenVisibleItems;
 }
 
 // Store reuseable cells by reuseIdentifier. The key is reuseIdentifier
